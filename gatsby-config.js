@@ -4,14 +4,18 @@
 module.exports = {
   siteMetadata: {
     title: `App`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://RyanWalker-FS.github.io/App`,
+    pathPrefix: "/App",
   },
-  plugins: ["gatsby-transformer-remark", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+  plugins: [
+    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
     },
-    __key: "pages"
-  }]
+  ],
 };
